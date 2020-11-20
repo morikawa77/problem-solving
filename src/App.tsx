@@ -114,9 +114,11 @@ function App() {
             </p>
           </div>
         </section>
-        <section>
-          <YouTube id="_bZi-34IFxs" />
-        </section>
+        <YouTube id="_bZi-34IFxs" />
+        <br />
+        <br />
+        <br />
+        <br />
         <section>
           <img
             src={girlWithObjectsAroundHer}
@@ -237,9 +239,11 @@ function App() {
             </p>
           </div>
         </section>
-        <section>
-          <YouTube id="fPz6uvIbWZE" />
-        </section>
+        <YouTube id="fPz6uvIbWZE" />
+        <br />
+        <br />
+        <br />
+        <br />
         <section>
           <div>
             <blockquote>
