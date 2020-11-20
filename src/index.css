@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #F6F6F6;
+  color: #4F5665;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: #4F5665;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+#container {
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 1240px;
+  min-width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 30px 0 120px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 120px;
+}
+
+section h1 {
+  width: 555px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 0 0 20px;
+}
+
+section h2 {
+  min-width: 555px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  padding: 0 65px 0 0;
+}
+
+section ul {
+  list-style: none;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 170px;
+}
+
+section div > div{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 0;
+  line-height: 40px;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 670px;
+  margin: 0 170px 0 0;
+  padding: 0 150px 0 0;
+}
+
+section div > div img {
+  margin: 0 10px 0 0;
+}
+
+section div > div > div:nth-child(2) {
+  margin: 20px 0 0 30px;
+}
+
+.mt-10{
+  margin: 10px 0 0;
+}
+
+blockquote {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 50px;
+  color: #000000;
+  width: 450px;
+}
+
+blockquote cite {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-style: oblique;
+  line-height: 21px;
+  display: block;
+  margin: 0 0 30px;
+}
+
+.selfTop {
+  align-self: flex-start;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+footer {
+  min-width: 100%;
+  background: #FF5856;
+  height: 565px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+footer div {
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width:100%;
+  color: #ffffff;
+}
+
+footer div:not(:first-child) {
+  margin: 50px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+footer p {
+  width: 400px;
+  line-height: 25px;
+}
+
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #container {
+    max-width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 10px 0;
+  }
+
+  div, section, section h1, section h2, section h3, div h1, div h2, div h3 {
+    max-width: 95%;
+    min-width: 95vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0;
+  }
+
+  section div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0;
+    padding: 10px;
+  }
+
+  section div > div {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 10px 0;
+    padding: 10px;
+  }
+
+  section div > div > div:nth-child(2) {
+    margin: 0 10px 0;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 0 10px 0;
+    padding: 10px;
+  }
+
+  section {
+    margin: 130px 10px 0 0;
+  }
+
+  p {
+    min-width: 95%;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+  }
+
+  footer div {
+    max-width: 95%;
+  }
+
+  img {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    color: #000000;
+    width: 95%;
+  }
+
+  footer p {
+    width: 95%;
+    line-height: 25px;
+  }
+
+  li img {
+    width: 25px;
+  }
+
+  ul {
+    width: 95%;
+  }
+
+  #root {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
